@@ -121,8 +121,8 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.75 0.18 15);
-  --primary-foreground: oklch(0.22 0.03 20);
+  --primary: oklch(0.62 0.19 250);
+  --primary-foreground: oklch(0.97 0.01 250);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
@@ -1244,8 +1244,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
  * embedded module workspaces so their hand-tuned colours stay readable.
  * ===================================================================== */
 :root, .solvik-paper {
-  --lime: oklch(0.75 0.18 15);
-  --lime-foreground: oklch(0.22 0.03 20);
+  --lime: oklch(0.62 0.19 250);
+  --lime-foreground: oklch(0.97 0.01 250);
   --salmon: oklch(0.78 0.13 40);
   --sky: oklch(0.8 0.1 245);
   --cream: oklch(0.96 0.012 20);
@@ -1261,8 +1261,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --card-foreground: oklch(0.24 0.02 20);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.24 0.02 20);
-  --primary: oklch(0.75 0.18 15);
-  --primary-foreground: oklch(0.22 0.03 20);
+  --primary: oklch(0.62 0.19 250);
+  --primary-foreground: oklch(0.97 0.01 250);
   --secondary: oklch(0.955 0.01 20);
   --secondary-foreground: oklch(0.26 0.02 20);
   --muted: oklch(0.955 0.01 20);
@@ -2084,8 +2084,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --card-foreground: oklch(0.25 0.02 20);
   --popover: oklch(0.995 0.003 120);
   --popover-foreground: oklch(0.25 0.02 20);
-  --primary: oklch(0.75 0.18 15);
-  --primary-foreground: oklch(0.22 0.03 20);
+  --primary: oklch(0.62 0.19 250);
+  --primary-foreground: oklch(0.97 0.01 250);
   --secondary: oklch(0.93 0.015 20);
   --secondary-foreground: oklch(0.29 0.025 20);
   --muted: oklch(0.94 0.01 20);
@@ -2109,8 +2109,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --shadow-glow: 0 10px 30px -14px oklch(0.45 0.09 15 / 35%);
   --sidebar: oklch(1 0 0 / 76%);
   --sidebar-foreground: oklch(0.25 0.02 20);
-  --sidebar-primary: oklch(0.75 0.18 15);
-  --sidebar-primary-foreground: oklch(0.22 0.03 20);
+  --sidebar-primary: oklch(0.62 0.19 250);
+  --sidebar-primary-foreground: oklch(0.97 0.01 250);
   --sidebar-accent: oklch(0.92 0.035 20);
   --sidebar-accent-foreground: oklch(0.34 0.06 15);
   --sidebar-border: oklch(0.35 0.025 20 / 16%);
@@ -2176,8 +2176,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --card-foreground: oklch(0.25 0.02 20);
   --popover: oklch(0.995 0.003 120);
   --popover-foreground: oklch(0.25 0.02 20);
-  --primary: oklch(0.75 0.18 15);
-  --primary-foreground: oklch(0.22 0.03 20);
+  --primary: oklch(0.62 0.19 250);
+  --primary-foreground: oklch(0.97 0.01 250);
   --secondary: oklch(0.93 0.015 20);
   --secondary-foreground: oklch(0.29 0.025 20);
   --muted: oklch(0.94 0.01 20);
@@ -2197,13 +2197,13 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --sidebar-bg: linear-gradient(180deg, oklch(1 0 0 / 90%), oklch(0.96 0.015 20 / 90%));
   --sidebar-foreground: oklch(0.25 0.02 20);
   --sidebar-muted: oklch(0.48 0.02 20);
-  --sidebar-primary: oklch(0.75 0.18 15);
-  --sidebar-primary-foreground: oklch(0.22 0.03 20);
+  --sidebar-primary: oklch(0.62 0.19 250);
+  --sidebar-primary-foreground: oklch(0.97 0.01 250);
   --sidebar-accent: oklch(0.92 0.035 20);
   --sidebar-accent-foreground: oklch(0.34 0.06 15);
   --sidebar-border: oklch(0.35 0.025 20 / 16%);
   --sidebar-ring: oklch(0.52 0.11 15);
-  --sidebar-indicator: oklch(0.75 0.18 15);
+  --sidebar-indicator: oklch(0.62 0.19 250);
   --shadow-panel: 0 18px 45px -28px oklch(0.3 0.06 15 / 28%);
   background-color: transparent;
 }
