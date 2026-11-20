@@ -1,0 +1,8 @@
+[
+  {"capability":"code","source":"github.com/o8861338-cmyk/admission-academy-hub","outcome":"copied into project","status":"done","next_action":"none"},
+  {"capability":"schema","source":"none (app_state shim over localStorage)","outcome":"no database in source","status":"not_applicable","next_action":"none"},
+  {"capability":"records","source":"browser localStorage + seed files","outcome":"seed data ships with code","status":"not_applicable","next_action":"none"},
+  {"capability":"auth","source":"none","outcome":"no sign-in in source","status":"not_applicable","next_action":"none"},
+  {"capability":"external providers / secrets / webhooks / schedules","source":"none detected","outcome":"none","status":"not_applicable","next_action":"none"},
+  {"capability":"verification","source":"-","outcome":"build OK, 7 main sections load without errors; 23 of 270 inherited tests fail as in source","status":"verified","next_action":"optional: fix inherited failing tests"}
+]
