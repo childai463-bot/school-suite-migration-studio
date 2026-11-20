@@ -1336,9 +1336,10 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
     pointer-events: none;
     background-size: cover;
     background-position: center top;
-    /* ~85% blur: heavy gaussian blur, scaled up so blurred edges don't show */
-    filter: blur(42px) saturate(110%);
-    transform: scale(1.08);
+    /* Light blur so the infinity shape stays visible; hue-rotate shifts the
+       warm artwork to blue, scaled up so blurred edges don't show */
+    filter: blur(14px) saturate(125%) hue-rotate(215deg);
+    transform: scale(1.05);
   }
   .solvik-backdrop::after {
     content: "";
