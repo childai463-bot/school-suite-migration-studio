@@ -1336,6 +1336,9 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
     pointer-events: none;
     background-size: cover;
     background-position: center top;
+    /* ~85% blur: heavy gaussian blur, scaled up so blurred edges don't show */
+    filter: blur(42px) saturate(110%);
+    transform: scale(1.08);
   }
   .solvik-backdrop::after {
     content: "";
