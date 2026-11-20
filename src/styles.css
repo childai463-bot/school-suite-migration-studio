@@ -706,7 +706,7 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
 .metric-change.orange { color: oklch(0.694 0.124 58.2); }
 .dashboard-columns { display: grid; min-height: 0; flex: 1; grid-template-columns: minmax(0, 1.72fr) minmax(280px, .9fr); gap: 14px; }
 .dashboard-left-column { display: grid; min-width: 0; grid-template-rows: minmax(0, 1.05fr) minmax(0, .95fr); gap: 14px; }
-.dashboard-panel { min-width: 0; overflow: hidden; border: 1px solid oklch(1.000 0.000 0.0 / 0.12); border-radius: 13px; background: oklch(0.270 0.012 20 / 0.728); box-shadow: 0 3px 12px rgba(43,45,67,.03); }
+.dashboard-panel { min-width: 0; overflow: hidden; border: 1px solid oklch(1.000 0.000 0.0 / 0.12); border-radius: 13px; background: oklch(0.205 0.014 20 / 0.78); box-shadow: 0 3px 12px rgba(43,45,67,.03); }
 .meeting-panel, .employee-panel, .events-panel { padding: 18px; }
 .panel-heading { display: flex; min-height: 34px; align-items: flex-start; justify-content: space-between; gap: 10px; }
 .panel-heading h2 { margin: 0; color: oklch(0.841 0.008 20); font-size: 16px; font-weight: 650; line-height: 1.2; }
@@ -1249,8 +1249,10 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --salmon: oklch(0.78 0.13 40);
   --sky: oklch(0.8 0.1 245);
   --cream: oklch(0.96 0.012 20);
-  --glass: oklch(1 0 0 / 7%);
-  --glass-strong: oklch(1 0 0 / 12%);
+  /* Panels read as dark smoked glass: a deep fill that still lets the
+     infinity backdrop show through. */
+  --glass: oklch(0.19 0.014 20 / 62%);
+  --glass-strong: oklch(0.235 0.016 20 / 70%);
   --glass-border: oklch(1 0 0 / 14%);
 }
 
@@ -1304,7 +1306,7 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --secondary: oklch(1 0 0 / 9%);
   --secondary-foreground: oklch(0.97 0.006 20);
   --muted: oklch(1 0 0 / 7%);
-  --muted-foreground: oklch(0.82 0.012 20 / 72%);
+  --muted-foreground: oklch(0.87 0.012 20 / 90%);
   --accent: oklch(1 0 0 / 11%);
   --accent-foreground: oklch(0.97 0.006 20);
   --destructive: oklch(0.7 0.17 32);
@@ -1338,7 +1340,7 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
     background-position: center top;
     /* Light blur so the infinity shape stays visible; hue-rotate shifts the
        warm artwork to blue, scaled up so blurred edges don't show */
-    filter: blur(14px) saturate(125%) hue-rotate(215deg);
+    filter: blur(9px) saturate(135%) hue-rotate(215deg);
     transform: scale(1.05);
   }
   .solvik-backdrop::after {
@@ -1346,8 +1348,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 50% 120%, transparent 30%, oklch(0.18 0.012 20 / 55%) 75%),
-      linear-gradient(180deg, oklch(0.2 0.012 20 / 35%), oklch(0.16 0.01 20 / 55%));
+      radial-gradient(ellipse at 50% 120%, transparent 35%, oklch(0.16 0.012 20 / 38%) 78%),
+      linear-gradient(180deg, oklch(0.18 0.012 20 / 18%), oklch(0.15 0.01 20 / 34%));
   }
 
   .glass {
@@ -1797,7 +1799,7 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
   --secondary: oklch(1 0 0 / 9%);
   --secondary-foreground: oklch(0.97 0.006 20);
   --muted: oklch(1 0 0 / 7%);
-  --muted-foreground: oklch(0.82 0.012 20 / 72%);
+  --muted-foreground: oklch(0.87 0.012 20 / 90%);
   --accent: oklch(1 0 0 / 11%);
   --accent-foreground: oklch(0.97 0.006 20);
   --destructive: oklch(0.7 0.17 32);
@@ -1872,13 +1874,13 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
 }
 /* Marketing & PR workspace navigation */
 .solvik {
-  --module-start: oklch(1 0 0 / 7%);
-  --module-middle: oklch(1 0 0 / 5%);
-  --module-end: oklch(1 0 0 / 3%);
+  --module-start: oklch(0.17 0.014 20 / 60%);
+  --module-middle: oklch(0.19 0.014 20 / 50%);
+  --module-end: oklch(0.21 0.014 20 / 42%);
 }
 /* Charts drawn with light grid lines */
 .solvik .recharts-cartesian-grid line { stroke: oklch(1 0 0 / 10%); }
-.solvik .recharts-text { fill: oklch(0.82 0.012 20 / 72%); }
+.solvik .recharts-text { fill: oklch(0.87 0.012 20 / 90%); }
 .solvik .recharts-default-tooltip {
   background: oklch(0.27 0.014 20) !important;
   border-color: oklch(1 0 0 / 14%) !important;
