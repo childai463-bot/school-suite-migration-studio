@@ -1336,8 +1336,9 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
     pointer-events: none;
     background-size: cover;
     background-position: center top;
-    /* ~75% blur: heavy gaussian blur, scaled up so blurred edges don't show */
-    filter: blur(38px) saturate(115%);
+    /* ~10% visible: very heavy blur plus a strong dark veil, scaled up so
+       blurred edges don't show */
+    filter: blur(55px) saturate(105%);
     transform: scale(1.08);
   }
   .solvik-backdrop::after {
@@ -1345,8 +1346,8 @@ nav a { transition: background .25s, color .25s, border-color .25s; }
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 50% 120%, transparent 30%, oklch(0.18 0.012 20 / 50%) 75%),
-      linear-gradient(180deg, oklch(0.2 0.012 20 / 32%), oklch(0.16 0.01 20 / 50%));
+      radial-gradient(ellipse at 50% 120%, oklch(0.18 0.012 20 / 55%) 30%, oklch(0.16 0.012 20 / 85%) 75%),
+      linear-gradient(180deg, oklch(0.2 0.012 20 / 78%), oklch(0.16 0.01 20 / 88%));
   }
 
   .glass {
